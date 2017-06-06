@@ -83,11 +83,11 @@ function now() {
     lastDuration = now() - lastCall;
   };
 
-  if(typeof window !== 'undefined' && typeof window.addEventListener !== 'undefined') {
-    ['resize', 'scroll', 'touchmove'].forEach(event => {
-      window.addEventListener(event, tick);
-    });
-  }
+  // if(typeof window !== 'undefined' && typeof window.addEventListener !== 'undefined') {
+  //   ['resize', 'scroll', 'touchmove'].forEach(event => {
+  //     window.addEventListener(event, tick);
+  //   });
+  // }
 })();
 
 const MIRROR_LR = {
